@@ -1,0 +1,20 @@
+.outlineBtnWrapper{
+    background: linear-gradient(90deg, #1CE3C7 0%, #7668E7 100%);
+    padding: 1px;
+    border-radius: 5px;
+}
+.outlineBtn{
+    padding: 15px 14px;
+    font-family: 'gordita-bold', sans-serif;
+    font-size: 14px;
+    box-shadow: 4px 6px 61px rgba(99, 104, 231, 0.2);
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.outlineBtn svg{
+    font-size: 35px;
+}

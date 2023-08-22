@@ -1,0 +1,115 @@
+.servicesMain{
+    background-color: #00234F;
+}
+.mainSection{
+    border: 1px solid #00234F;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainSectionContainer{
+    /* border: 1px solid red; */
+    width: 1200px;
+    height: auto;
+    margin: 120px auto;
+}
+
+/* Services Section */
+.servicesSection{
+    /* border: 1px solid white; */
+    width: 100%;
+}
+.servicesSectionContainer{
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* How It Works */
+.howItWorksSection{
+    /* border: 1px solid red; */
+    height: auto;
+}
+.howItWorksContainer{
+    /* border: 1px solid white; */
+    width: 1200px;
+    margin: 100px auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.howItWorksContainer > h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+/* Tablet View ------------------------------------------ */
+@media all and (min-width:681px) and (max-width:1250px)  {
+    .mainSectionContainer{
+        width: 90%;
+    }
+    /* Services Section */
+    .servicesSectionContainer{
+        width: 90%;
+        /* display: none; */
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    /* How It Works */
+    .howItWorksContainer{
+        /* border: 1px solid white; */
+        width: 90%;
+    }
+    .howItWorksContainer > h2{
+        font-size: 45px;
+    }
+}
+
+
+
+
+
+/* Mobile View */
+@media all and (max-width:680px) {
+
+    .mainSectionContainer{
+        width: 90%;
+    }
+
+
+    /* Services Section */
+    .servicesSectionContainer{
+        width: 90%;
+        /* display: none; */
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+
+
+    /* How It Works */
+    .howItWorksContainer{
+        width: 90%;
+        /* display: none; */
+    }
+
+    /* Need Solution Section */
+    .needSolution{
+        /* display: none; */
+    }
+
+}

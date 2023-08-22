@@ -1,0 +1,22 @@
+.blogPost{
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    margin-bottom: 80px;
+}
+.blogPost > img{
+    width: 100%;
+    height: auto;
+    background-color: rgb(202, 202, 202);
+    border-radius: 20px 20px 0 0;
+}
+.blogPost > div {
+    /* border: 1px solid black; */
+    padding: 40px;
+    border-radius: 0 0 20px 20px;
+}
+.blogPost h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: var(--gBold), sans-serif;
+}

@@ -1,0 +1,13 @@
+.headingH1{
+    font-size: 55px;
+    color: white;
+    font-family: VAR(--gBold), sans-serif;
+}
+
+/* Mobile View */
+@media all and (max-width:680px) {
+
+    .headingH1{
+        font-size: 40px;
+    }
+}

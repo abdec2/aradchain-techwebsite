@@ -1,0 +1,163 @@
+.serviceHeading{
+    /* border: 1px solid black; */
+    width: 1200px;
+    margin: auto;
+    font-size: 50px;
+}
+.serviceHeading h1{
+    padding: 70px 0;
+    font-family: var(--gBold), sans-serif;
+}
+
+/* Service Container */
+.serviceContainer{
+    /* border: 1px solid green; */
+    width: 1200px;
+    margin: auto;
+    height: auto;
+    display: flex;
+}
+
+
+/* CONTENT */
+.serviceContent{
+    /* border: 1px solid blue; */
+    width: 68%;
+    height: 100%;
+    margin-right: 50px;
+}
+.serviceContent > img{
+    /* border: 1px solid red; */
+    height: 400px;
+    width: 100%;
+    border-radius: 25px;
+    background-color: rgb(206, 206, 206);
+    margin-bottom: 70px;
+}
+.serviceContent > p{
+    margin-bottom: 30px;
+}
+/* GRID BOXES */
+.serviceContent > div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin: 100px 0;
+}
+
+/* SIDEBAR */
+.serviceSidebar{
+    /* border: 1px solid blue; */
+    width: 32%;
+    height: 100%;
+}
+.serviceSidebar h2{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.serviceList{
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.serviceList li{
+    list-style: none;
+    margin: 7px 0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 7px;
+    gap: 7px;
+}
+.serviceList li:hover{
+    color: #00234F;
+    font-weight: 600;
+}
+.serviceList a:active {
+    /* Define your active link styles here */
+    color: red;
+    font-weight: bold;
+  }
+
+
+
+
+  /* Laptop View ------------------------------------------ */
+@media all and (min-width:681px) and (max-width:1250px)  {
+    .serviceHeading{
+        width: 90%;
+    }
+    /* Blog Section */
+    .serviceContainer{
+        width: 90%;
+        flex-direction: column;
+    }
+    .serviceContent{
+        width: 100%;
+    }
+    .serviceSidebar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+    }
+    .serviceSidebar > div{
+        width: 48%;
+        margin-top: 0;
+    }
+}
+
+
+
+
+
+
+  /* Mobile View */
+@media all and (max-width:680px) {
+    .serviceHeading{
+        width: 90%;
+        font-size: 40px;
+    }
+
+
+    /* Service Container */
+    .serviceContainer{
+        /* display: none; */
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    /* CONTENT */
+    .serviceContent{
+        /* border: 1px solid blue; */
+        width: 100%;
+    }
+
+        /* GRID BOXES */
+    .serviceContent > div{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .serviceContent > img{
+        /* border: 1px solid red; */
+        height: 100%;
+    }
+
+
+    /* SIDEBAR */
+    .serviceSidebar{
+        width: 100%;
+    }
+
+
+
+    /* Ready to take */
+    .readyToTake{
+        display: none;
+    }
+}

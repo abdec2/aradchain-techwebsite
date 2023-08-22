@@ -1,0 +1,63 @@
+.projectMain{
+    background-color: #00234F;
+}
+.mainSection{
+    border: 1px solid #00234F;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainSectionContainer{
+    /* border: 1px solid red; */
+    width: 1200px;
+    height: auto;
+    margin: 120px auto;
+}
+.mainSectionContainer h1{
+    /* color: white; */
+}
+
+
+/* Projects Section */
+.projectsSection{
+    /* border: 1px solid white; */
+    width: 100%;
+    margin-bottom: 100px;
+}
+.projectsSectionContainer{
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* Tablet View ------------------------------------------ */
+@media all and (min-width:681px) and (max-width:1250px)  {
+    .mainSectionContainer{
+        width: 90%;
+    }
+    /* Services Section */
+    .projectsSectionContainer{
+        width: 90%;
+        /* display: none; */
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+
+/* Mobile View */
+@media all and (max-width:680px) {
+    .mainSectionContainer{
+        width: 90%;
+    }
+    .projectsSectionContainer{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

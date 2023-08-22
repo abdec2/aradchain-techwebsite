@@ -1,0 +1,27 @@
+.projectResult{
+    /* border: 1px solid black; */
+    margin-top: 60px;
+}
+.projectResult > div:first-child{
+    border-radius: 50%;
+    background-color: #92DEED;
+    color: white;
+    display: flex;
+    /* height: 100px; */
+    width: 100px;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-content: center;
+    text-align: center;
+}
+
+.projectResult h3, .projectResult > p:nth-child(3){
+    padding-left: 120px;
+}
+.projectResult h3{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}

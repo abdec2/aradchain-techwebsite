@@ -1,0 +1,125 @@
+/* Ready To Take */
+.readyToTakeSection{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+}
+.readyToTakeContainer{
+    /* border: 1px solid black; */
+    width: 1200px;
+    margin: 100px auto;
+    display: flex;
+}
+.readyToTakeLeft{
+    width: 75%;
+    border-radius: 30px;
+    background-color: #00234F;
+    padding: 45px 370px 45px 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    background-image: url(../../assets/homeBtm.png);
+    background-position-y: 65%;
+}
+.readyToTakeLeft > h1{
+    /* border: 1px solid red; */
+    color: white;
+    font-family: var(--gBold), sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+.readyToTakeLeft > h1 span{
+    font-family: var(--gThinItalic);
+    font-weight: 100;
+}
+.readyToTakeLeft a{
+    width: 70%;
+    padding: 3px;
+}
+.readyToTakeLeft button{
+    padding: 8px 20px;
+}
+.readyToTakeRight{
+    width: 25%;
+    /* border: 1px solid green; */
+    padding: 10px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.readyToTakeRight h1{
+    font-family: var(--gBold);
+    font-size: 60px;
+    color: #00234F;
+}
+.readyToTakeRight p{
+    font-family: var(--gBold);
+    font-size: 18px;
+}
+
+
+
+/* Laptop View ------------------------------------------ */
+@media all and (min-width:901px) and (max-width:1250px)  {
+    .readyToTakeContainer{
+        width: 90%;
+        align-items: center;
+    }
+    .readyToTakeLeft{
+        width: 75%;
+        padding: 45px 70px 45px 46px;
+    }
+    .readyToTakeLeft > h1{
+        font-size: 40px;
+    }
+    .readyToTakeRight{
+        padding: 10px 35px;
+        gap: 15px;
+    }
+    .readyToTakeRight h2{
+        font-size: 45px;
+    }
+}
+
+
+
+
+
+
+/* Mobile View */
+@media all and (max-width:900px) {
+    .readyToTakeContainer{
+        width: 90%;
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 0;
+    }
+    .readyToTakeLeft{
+        width: 100%;
+        padding: 45px;
+
+    }
+    .readyToTakeLeft > h1{
+        font-size: 40px;
+    }
+    .readyToTakeLeft button{
+        padding: 12px 10px;
+        text-align: left;
+    }
+    .readyToTakeRight{
+        width: 100%;
+        flex-direction: row;
+        padding: 10px;
+        
+
+    }
+    .readyToTakeRight h2{
+        font-size: 35px;
+        text-align: center;
+    }
+    .readyToTakeRight p{
+        text-align: center;
+    }
+}

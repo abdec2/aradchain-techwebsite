@@ -1,0 +1,13 @@
+
+.articleText > h2{
+    font-family: var(--gBold), sans-serif;
+    font-size: 30px;
+    margin: 20px 0 ;
+}
+.articleText > p{
+    margin: 20px 0;
+}
+.articleText > p > span{
+    font-family: var(--gBold), sans-serif;
+}
+

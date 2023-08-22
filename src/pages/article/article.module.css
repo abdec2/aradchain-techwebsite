@@ -1,0 +1,139 @@
+.articleMain{
+    /* background-color: #00234F; */
+}
+.mainSection{
+    border: 1px solid white;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainSectionContainer{
+    /* border: 1px solid red; */
+    width: 1200px;
+    height: auto;
+    margin: 60px auto;
+}
+.mainSectionContainer  h1{
+    color: #11112B;
+}
+
+/* article Section */
+.articleSection{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+}
+.articleSectionContainer{
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    gap: 0 50px;
+}
+.articleBody{
+    /* border: 1px solid blue; */
+    width: 68%;
+    height: 100%;
+}
+.articleBody > img{
+    border-radius: 20px;
+    width: 100%;
+    height: 450px;
+    margin-bottom: 20px;
+}
+.articleBody >  div:nth-child(2) > svg{
+    font-size: 50px;
+    margin-right: 15px;
+}
+.articleBody >  div:nth-child(2){
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.articleBody > div:nth-child(2) > div > h3{
+    font-size: 13px;
+    font-weight: 600;
+}
+.articleBody > div:nth-child(2) > div > p{
+    color: #838383;
+    font-size: 12px;
+}
+.articleSidebar{
+    /* border: 1px solid blue; */
+    width: 33%;
+    height: 100%;
+}
+.latestPostBox{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    border-radius: 25px;
+    padding: 30px;
+}
+.latestPostBox h3{
+    /* border: 1px solid red; */
+    font-family: var(--gBold), sans-serif;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+/* Laptop View ------------------------------------------ */
+@media all and (min-width:681px) and (max-width:1250px)  {
+    .mainSectionContainer{
+        width: 90%;
+    }
+    /* Blog Section */
+    .articleSectionContainer{
+        width: 90%;
+        flex-direction: column;
+    }
+    .articleBody{
+        width: 100%;
+    }
+    .articleSidebar{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    .articleSidebar > div{
+        width: 48%;
+        height: 450px;
+    }
+}
+
+
+
+
+
+
+ /* Mobile View */
+ @media all and (max-width:680px) {
+    .mainSectionContainer{
+        width: 90%;
+    }
+
+    /* article Section */
+    .articleSectionContainer{
+        /* border: 1px solid red; */
+        width: 90%;
+        flex-direction: column;
+    }
+    .articleBody{
+        width: 100%;
+    }
+    .articleBody > img{
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* Sidebar */
+    .articleSidebar{
+        width: 100%;
+    }
+ }

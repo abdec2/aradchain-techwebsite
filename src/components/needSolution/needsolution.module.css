@@ -1,0 +1,96 @@
+.needSolutionSection{
+    /* border: 1px solid red; */
+    width:100%;
+    height:auto;
+    background-image: url(../../assets/aboutSVG.png);
+    background-position: center;
+    background-position-y: 55%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+.needSolutionContainer{
+    /* border: 1px solid white; */
+    height: 100%;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.needSolutionContainer > h1:nth-child(2){
+    margin-top: -20px;
+}
+.needSolutionContainer span{
+    font-style: italic;
+    font-weight: 300;
+}
+.needSolutionContainer h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+.needSolutionContainer a{
+    border: 1px solid white;
+    background-color: #11112B;
+    color: white;
+    padding: 17px 25px;
+    margin: 40px 0;
+    border-radius: 10px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.needSolutionContainer img{
+    width: 25%;
+}
+.needSolutionContainer > h1:nth-child(2){
+    margin-top: 40px;
+}
+
+
+
+
+/* Tablet View ------------------------------------------ */
+@media all and (min-width:681px) and (max-width:1250px)  {
+    .needSolutionSection{
+        /* border: 1px solid red; */
+        width:100%;
+        height:auto;
+        background-image: url(../../assets/aboutSVG.png);
+        background-position: center;
+        background-position-y: 65%;
+        background-size: 1200px;
+    }
+    .needSolutionContainer{
+        width: 90%;
+        align-items: flex-center;
+    }
+    .needSolutionContainer h1{
+        font-size: 40px;
+    }
+}
+
+
+
+/* Mobile View */
+@media all and (max-width:680px) {
+    .needSolutionSection{
+        /* border: 1px solid red; */
+        width:100%;
+        height:auto;
+        background-image: url(../../assets/aboutSVG.png);
+        background-position: center;
+        background-position-y: 65%;
+        background-size: 1200px;
+    }
+    .needSolutionContainer{
+        width: 90%;
+        align-items: flex-start;
+    }
+    .needSolutionContainer h1{
+        font-size: 40px;
+    }
+}

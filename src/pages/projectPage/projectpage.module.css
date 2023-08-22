@@ -1,0 +1,142 @@
+.projectHeading{
+    /* border: 1px solid black; */
+    width: 1200px;
+    margin: auto;
+    font-size: 50px;
+}
+.projectHeading > h1{
+    font-family: var(--gBold), sans-serif;
+    /* margin: 70px 0; */
+    padding-top: 70px;
+}
+
+/* Project Container */
+.projectPageContainer{
+    /* border: 1px solid green; */
+    width: 1200px;
+    margin: 70px auto 0 auto;
+    height: auto;
+    display: flex;
+}
+.projectPageContainer img{
+    /* border: 1px solid black; */
+    width: 100%;
+    border-radius: 20px;
+    /* height: 400px; */
+    background-color: grey;
+}
+
+/* Project Details */
+.projectDetails{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-top: 60px;
+}
+.projectDetails p{
+    font-size: 12px;
+    font-weight: 600;
+}
+.projectDetails h3{
+    font-size: 20px;
+    font-family: var(--gBold), sans-serif;
+    color: rgb(146, 146, 146);
+    margin-top: 15px;
+}
+
+.projectPageContent h2{
+    font-size: 30px;
+    font-family: var(--gBold), sans-serif;
+    margin: 20px 0;
+}
+.projectContent{
+    /* border: 1px solid red; */
+    margin-top: 50px;
+}
+.projectContent > p{
+    margin-bottom: 30px;
+}
+.projectDetails > div:last-child h3{
+    color: #013577;
+}
+
+
+/* Laptop View ------------------------------------------ */
+@media all and (min-width:901px) and (max-width:1250px)  {
+    .projectHeading{
+        width: 90%;
+    }
+    .projectPageContainer{
+        width: 90%;
+    }
+    .projectPageContainer img{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+/* Tablet View ------------------------------------------ */
+@media all and (min-width:681px) and (max-width:900px)  {
+    .projectHeading{
+        width: 90%;
+    }
+    .projectPageContainer{
+        width: 90%;
+    }
+    .projectPageContainer img{
+        width: 100%;
+        margin: auto;
+    }
+    /* Project Details */
+    .projectDetails{
+        /* border: 1px solid black; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 20px;
+        gap: 30px 0;
+    }
+    .projectDetails h3{
+        margin-top: 5px;
+    }
+
+
+
+}
+
+
+
+
+
+  /* Mobile View */
+  @media all and (max-width:680px) {
+    .projectHeading{
+        width: 90%;
+        font-size: 40px;
+    }
+
+     /* Service Container */
+     .projectPageContainer{
+        /* display: none; */
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    /* Project Details */
+    .projectDetails{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .projectDetails h3{
+        margin-top: 5px;
+    }
+
+}   

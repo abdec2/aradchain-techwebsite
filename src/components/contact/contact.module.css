@@ -1,0 +1,45 @@
+.serviceContact{
+    border: 1px solid black;
+    background-color: #00234F;
+    border-radius: 25px;
+    margin-top: 30px;
+    padding: 30px;
+    color: white;
+    background-image: url(../../assets/homeBtm.png);
+    /* background-position-y: 35%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70%;
+}
+.serviceContact > div > h2{
+    font-family: var(--gBold), sans-serif;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.serviceContact > div > div{
+    margin: 10px 0;
+    font-size: 14px;
+}
+.serviceContact > div > div > p{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.serviceContact > div > div > a > p{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.serviceContact > div > div:nth-child(3) > a > p svg{
+    font-size: 20px;
+}
+.serviceContact > div > div:nth-child(4) > a > p > svg{
+    font-size: 20px;
+}
+.serviceContact > div > div:nth-child(5) > p > svg{
+    font-size: 40px;
+}
+.serviceContact img{
+    margin-top: 100px;
+    width: 70%;
+}

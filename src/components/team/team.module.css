@@ -1,0 +1,26 @@
+.team{
+    /* border: 1px solid pink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.team img{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+.team p{
+    /* text-align: left; */
+    width: 100%;
+    margin-top: 15px;
+    font-size: 14px;
+}
+.team h3{
+    width: 100%;
+    /* text-align: left; */
+    font-size: 20px;
+    font-family: var(--gBold), sans-serif;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

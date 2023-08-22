@@ -1,0 +1,6 @@
+/* File: font.css */
+@font-face {
+    font-family: 'GorditaMedium';
+    src: local('GorditaMedium'),
+         url('./gordita-cufonfonts/Gordita\ Medium.otf') format('otf'),
+}

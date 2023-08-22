@@ -1,0 +1,32 @@
+.aboutStats{
+    text-align: center;
+}
+.aboutStats > h1{
+    background: linear-gradient(to bottom, #3cb8d2, #746ae5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 70px;
+        width: 100%;
+      font-family: var(--gBold), sans-serif;
+}
+.aboutStats > p{
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    /* border:1px solid red; */
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+/* Laptop View ------------------------------------------ */
+@media all and (min-width:681px) and (max-width:1250px)  {
+    .aboutStats > h1{
+          font-size: 50px;
+    }
+    .aboutStats > p{
+        font-size: 18px;
+    }
+}

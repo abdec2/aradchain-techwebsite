@@ -1,0 +1,53 @@
+.servicesBox{
+    /* border: 1px solid white; */
+    padding: 45px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    border-radius: 20px;
+    /* background: var(--gradient-white, linear-gradient(180deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.10) 100%)); */
+    background: #de6161;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    backdrop-filter: blur(5px);
+    height: 540px;
+}
+#servicesBoxHovered{
+    background: linear-gradient(135deg, #3CB7D2 0%, #746AE5 100%);
+    backdrop-filter: blur(5px);
+}
+#arrowHovered{
+    background-color: white;
+    padding: 30px;
+    border-radius: 100px;
+}
+.servicesBox > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.servicesBox > div > img{
+    width: 20%;
+}
+.servicesBox > div > img:nth-child(2){
+    width: 15%;
+}
+.servicesBox > h2{
+    /* border: 1px solid red; */
+    font-size: 30px;
+    margin: 20px 0;
+    width: 100%;
+    font-family: var(--gBold), sans-serif;
+}
+
+
+
+
+/* Mobile View */
+@media all and (max-width:680px) {
+    .servicesBox > h2{
+        font-size: 25px;
+    }
+ }

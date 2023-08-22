@@ -1,0 +1,225 @@
+.aboutMain{
+    background-color: #00234F;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainSection{
+    border: 1px solid #00234F;
+    width: 100%;
+    height: auto;
+    background: url(../../assets/aboutBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainSectionContainer{
+    /* border: 1px solid red; */
+    width: 1200px;
+    height: auto;
+    margin: 120px auto;
+}
+.mainSectionContent{
+    /* border: 1px solid white; */
+    color: white;
+    display: flex;
+    margin-top: 80px;
+}
+.mainSectionContent > div:nth-child(1){
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    padding-right: 100px; 
+}
+
+.mainSectionContent > div:nth-child(1) h2{
+    font-family: var(--gBold);
+}
+
+.mainSectionContent > div:nth-child(2){
+    /* border: 1px solid yellow; */
+    width: 40%;
+}
+.mainSectionContent > div:nth-child(2) > p:last-child{
+    margin-top: 25px;
+}
+
+
+/* Info Section */
+.infoSection{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+}
+.infoContainer{
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin: auto;
+    color: black;
+}
+.infoTop{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* color: white; */
+    gap: 0 30px;
+    padding: 0 20px;
+}
+.infoBottom{
+    /* border: 1px solid green; */
+    border-radius: 40px;
+    height: 300px;
+    background-color: #00234F;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+
+
+/* Our Team */
+.ourTeamSection{
+    /* border: 1px solid yellow; */
+    width: 100%;
+    height:auto;
+}
+.ourTeamContainer{
+    /* border: 1px solid red; */
+    width:1200px;
+    margin:  100px auto 150px auto;
+    color: white;
+    text-align: center;
+}
+.ourTeamContainer > h1{
+    font-size: 50px;
+    font-family: var(--gBold), sans-serif;
+}
+.teamBoxes{
+    /* border: 1px solid white; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 90px;
+    justify-content: flex-start;
+    width: 60%;
+    margin: 70px auto 0 auto;
+}
+
+
+/* Laptop View ------------------------------------------ */
+@media all and (min-width:901px) and (max-width:1250px)  {
+    .mainSectionContainer{
+        width: 90%;
+    }
+
+     /* Info Section */
+     .infoContainer{
+        width: 90%;
+        /* display: none; */
+    }
+
+    /* Our Team */
+    .ourTeamContainer{
+        width:90%;
+        /* display: none; */
+    }
+}
+
+
+
+
+
+/* Tablet View ------------------------------------------ */
+@media all and (min-width:681px) and (max-width:900px)  {
+    .mainSectionContainer{
+        width: 90%;
+    }
+
+     /* Info Section */
+     .infoContainer{
+        width: 90%;
+        /* display: none; */
+    }
+
+    /* Our Team */
+    .ourTeamContainer{
+        width:90%;
+        /* display: none; */
+    }
+    .ourTeamContainer > h1{
+        font-size: 45px;
+    }
+    .teamBoxes{
+        width: 80%;
+    }
+    .infoTop{
+        grid-template-columns: repeat(2, 1fr);
+        gap:70px 30px;
+    }
+}
+
+
+
+
+
+
+
+  /* Mobile View */
+  @media all and (max-width:680px) {
+    .mainSectionContainer{
+        width: 90%;
+    }
+    .mainSectionContent{
+        flex-direction: column;
+    }
+    .mainSectionContent > div:nth-child(1){
+        width: 100%;
+        padding-right: 0;
+        gap: 50px;
+    }
+    .mainSectionContent > div:nth-child(2){
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    /* Info Section */
+    .infoContainer{
+        width: 90%;
+        /* display: none; */
+    }
+    .infoTop{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 120px;
+    }
+    .infoBottom{
+        height: auto;
+        flex-direction: column;
+        padding: 50px 0;
+        gap: 70px;
+    }
+    
+
+    /* Our Team */
+    .ourTeamContainer{
+        width:90%;
+        /* display: none; */
+    }
+    .teamBoxes{
+        /* border: 1px solid white; */
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .teamBoxes p{
+        text-align: center !important;
+    }
+    .teamBoxes h3{
+        text-align: center !important;
+    }
+  }

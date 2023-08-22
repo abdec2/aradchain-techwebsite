@@ -1,0 +1,13 @@
+.servicesGrid{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    padding: 50px;
+    border-radius: 20px;
+}
+.servicesGrid > svg{
+    font-size: 50px;
+}
+.servicesGrid > h2{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 25px 0 15px 0;
+}

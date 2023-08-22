@@ -1,0 +1,120 @@
+.blogMain{
+    /* background-color: #00234F; */
+}
+.mainSection{
+    border: 1px solid white;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainSectionContainer{
+    /* border: 1px solid red; */
+    width: 1200px;
+    height: auto;
+    margin: 60px auto;
+}
+.mainSectionContainer  h1{
+    color: #11112B;
+}
+
+/* Blog Section */
+.blogSection{
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+}
+.blogSectionContainer{
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    gap: 0 50px;
+}
+.blogBody{
+    /* border: 1px solid blue; */
+    width: 68%;
+    height: 100%;
+}
+.blogSidebar{
+    /* border: 1px solid blue; */
+    width: 33%;
+    height: 100%;
+}
+.latestPostBox{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    border-radius: 25px;
+    padding: 30px;
+
+}
+.latestPostBox h3{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Laptop View ------------------------------------------ */
+@media all and (min-width:681px) and (max-width:1250px)  {
+    .mainSectionContainer{
+        width: 90%;
+    }
+    /* Blog Section */
+    .blogSectionContainer{
+        width: 90%;
+        /* flex-direction: column; */
+    }
+}
+
+/* Tablet View ------------------------------------------ */
+@media all and (min-width:681px) and (max-width:1150px)  {
+    .mainSectionContainer{
+        width: 90%;
+    }
+    /* Blog Section */
+    .blogSectionContainer{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .blogBody{
+        /* border: 1px solid blue; */
+        width: 100%;
+    }
+    .blogSidebar{
+        /* border: 1px solid blue; */
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .blogSidebar > div{
+        width: 45%
+    }
+}
+
+
+ /* Mobile View */
+ @media all and (max-width:680px) {
+    .mainSectionContainer{
+        width: 90%;
+    }
+
+
+/* Blog Section */
+    .blogSectionContainer{
+        width: 90%;
+        flex-direction: column;
+    }
+    .blogBody{
+        /* border: 1px solid blue; */
+        width: 100%;
+    }
+    .blogSidebar{
+        /* border: 1px solid blue; */
+        width: 100%;
+    }
+ }

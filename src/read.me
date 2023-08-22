@@ -1,0 +1,18 @@
+ <!-- Google SpreadSheet -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbztB5yP_Z1EAaHmQNgIGgpuSflOuh_HTDd2o5H0q-QVVAj2vub0CW5iS25I-OsblivB/exec";
+      const form = document.forms["google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => alert("Registration Successfull"))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+
+
+
+    
